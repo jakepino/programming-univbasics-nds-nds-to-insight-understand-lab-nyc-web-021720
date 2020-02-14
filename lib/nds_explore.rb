@@ -10,5 +10,10 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  print directors_database
+  directors_database
+  i = 0
+  while i < directors_database.length do
+    print directors_database[:movies][i][:titles]
+    i += 1
+  end
 end
