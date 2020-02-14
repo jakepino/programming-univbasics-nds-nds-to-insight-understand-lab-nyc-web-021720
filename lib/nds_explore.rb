@@ -10,6 +10,7 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  puts directors_database[0]
-  
+  titles = nil
+  i = 0
+  while i < directors_database
 end
