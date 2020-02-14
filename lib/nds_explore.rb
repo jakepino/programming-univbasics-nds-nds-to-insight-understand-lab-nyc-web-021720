@@ -21,7 +21,7 @@ while row_index < directors_database.length do
       # Explanation!
       # vm[row][column][spinner]
       # spinner is full of Hashes with keys :price and :name
-      grand_total += vm[row_index][column_index][inner_index][:price]
+      print directors_database[row_index][column_index][inner_index][:title]
       inner_index += 1
     end
     column_index += 1
