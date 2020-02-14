@@ -13,6 +13,6 @@ def print_first_directors_movie_titles
   titles = nil
   i = 0
   while i < directors_database.length do 
-    titles = directors_database[:movies][i][:titles]
+    titles = directors_database[:movies][i] if 
   end
 end
