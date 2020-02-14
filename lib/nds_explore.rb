@@ -11,9 +11,22 @@ end
 
 def print_first_directors_movie_titles
   
-  i = 0
-  while i < directors_database.length do 
-    puts directors_database[:movies][i]
-    i += 1
+  row_index = 0
+while row_index < directors_database.length do
+  column_index = 0
+  while column_index < directors_database[row_index].length do
+    inner_len = directors_database[row_index][column_index].length
+    inner_index = 0
+    while inner_index < inner_len do
+      # Explanation!
+      # vm[row][column][spinner]
+      # spinner is full of Hashes with keys :price and :name
+      grand_total += vm[row_index][column_index][inner_index][:price]
+      inner_index += 1
+    end
+    column_index += 1
   end
+  row_index += 1
+end
+  
 end
